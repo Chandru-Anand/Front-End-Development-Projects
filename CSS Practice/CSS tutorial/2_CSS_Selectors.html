@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selectors</title>
+    <style>
+        h1{
+            color: aqua;
+            text-align: center;       /*Element Selector*/
+        }
+        p{
+            color: brown;
+            text-align: center;      /*Element Selector*/
+            font-size: 50px;
+        }
+        .name{
+            color: blueviolet;
+            font-style: inherit;     /*Class Selector*/
+            text-align: justify;
+        }
+        #Register_Number{
+            color:hotpink;
+            font-style: initial;     /*ID Selector*/
+            text-align: justify;
+        }
+        *{
+            background-color: black; 
+            color: forestgreen;       /*Universal Selectors Selector*/
+        }   
+
+        div>p{
+            color: coral;
+        }
+        div a{
+            color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <!--Element Selector Example-->
+    <!--Applying CSS directly to the elements-->
+    <!--Grouping selectors also used in css-->
+    <p>Hello Team</p>
+    <h1>welcome to mayuran academy</h1>
+
+
+    <!--Class & ID Selector Example-->
+    <!--"." symbol is used to select the Class -->
+    <!--"#" Symbol is used to select the ID-->
+    <p class="name">Chandru Anand</p>
+    <p id="Register_Number">17BEE043</p>
+    <p class="name">Lakshana</p>
+    <p id="Register_Number">17BEE044</p>
+    <p class="name">Chellamma</p>
+    <p id="Register_Number">17BEE045</p>
+    <p class="name">Sushmitha</p>
+    <p id="Register_Number">17BEE046</p>
+    <p class="name">Darwin Raj</p>
+    <p id="Register_Number">17BEE047</p>
+    <p class="name">Gowtham Chakravarthy</p>
+    <p id="Register_Number">17BEE048</p>
+
+    <!--Universal Selectors:- It is nothing but the above three selectors. this style will applied to all the pages in webpage expect those three
+                              "*" symbol is used to apply this style-->
+
+    <!--Child Selector-->
+    <!--oru element kulla iruka tag ah Parent tag..child tag nu solluvom..."Syntax:- parent>child" -->
+    <!--Athukullla iruka tags ah descendant tag nu solluvom.... "Syntax:- parent descendent "-->
+    <div>
+        <p>Contact Us for Further Info <a href="">Reach US</a></p>
+    </div>
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chandru Anand">
+    <meta name="Description" content="Page where I present you the complete tutorial of HTML">
+    <title>HTML Tutorial</title>
+</head>
+<body>
+    <h1>Welcome to Mayuran Academy</h1>
+    <br>
+    <h2>HTML Introduction</h2>
+    <p>HTML (HyperText Markup Language) was created by <b>Tim Berners-Lee in 1991</b> as a standard for creating web pages. It's a markup language used to structure content on the web, defining elements like headings, paragraphs, links, and images. HTML forms the backbone of web content.</p><p>In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks that create the structure and look of a website, similar to how bricks and mortar are used to build a house.</p>
+    <br>
+    <h2>Features of HTML</h2>
+    <ul type="disc">
+        <li>It is<b> platform-independent</b>. For example, Chrome displays the same pages identically across different operating systems such as Mac, Linux, and Windows.</li>
+        <li>HTML is a markup language and not a programming language.</li>
+        <li>It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or dynamic) web pages</li>
+        <li>Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their website)</li>
+    </ul>
+    <h2>A beautiful analogy to understand HTML, CSS, and JavaScript:</h2>
+    <img src="Images/html-car-example.png" alt="beautiful analogy to understand HTML, CSS, and JavaScript" >
+    <hr>
+    <h2>How do websites work?</h2>
+    <img src="Images/how html homeworks.png" alt="HTML Working">
+    <hr>
+    <h2>How does a basic website work?</h2>
+    <ul>
+        <li>Web Browser(client) requests websites like www.google.com from the web server.</li>
+        <li>Web server in return sends <b>HTML, CSS, and JavaScript files</b> to it.</li>
+        <li>HTML, CSS, and JavaScript files are parsed by a web browser which is responsible for showing you a beautiful website.</li>
+    </ul>
+    <h2>Installation & Setup of Visual Studio Code for HTML:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5deeCvboSos?si=2gbQKZwYbemHt0yK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Let's Get Started: Setting Up Your VS Code</h2>
+    <h3>Creating a New File</h3>
+    <p>Click on "Open Folder" and open a folder somewhere on your computer. I am opening a folder named html-tutorial.Once VS Code is open, you'll want to create a new file:</p>
+    <ol>
+        <li>Click on the "New File" icon in VS Code.</li>
+        <li>Type the filename as "index.html" and hit Enter.</li>
+    </ol>
+    <h3>Pasting the Code</h3>
+    <p>Now your file is ready, copy the following code and paste it into your "index.html" file.</p>
+    <code>
+        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Welcome to Mayuran Academy&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;p&gt;we are going to learn HTML From Scratch&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+          </pre>
+    </code>
+    <h3>Going Live using the "live server" extension</h3>
+    <p>To see your webpage in action, locate the "Go Live" icon at the bottom-right corner of your VS Code window and click it. If you don't see this icon, you probably haven't installed the Live Server extension, which we discussed in a previous tutorial.</p>
+    <img src="Images/vs-code-go-live.png" alt="VS-Code Live Extension" >
+    <h3>Your First Website is Live!</h3>
+    <img src="Images/result_page.png" alt="Result Page" >
+    <hr>
+    <h2>HTML Page Structure</h2>
+    <p>An HTML document is structured using a set of nested tags. Each tag is enclosed within &lt;...&gt; angle brackets and acts as a container for content or other HTML tags. Let's take a look at a basic HTML document structure:</p>
+    <img src="Images/page structure.png" alt="HTML Page Structure" >
+    <h2>Visualization of an HTML Document:</h2>
+    <img src="Images/html-tag-structure-image.png" alt="Visualization of HTML Document">
+    <h3>Summary</h3>
+    <ul>
+        <li>The <b>&lt;!DOCTYPE html&gt;</b> tag specifies that the document is an HTML5 document.</li>
+        <li>The <b>&lt;html lang="en"&gt;</b> tag defines the document to be in English.</li>
+        <li>The <b>&lt;head&gt;</b> section contains metadata and the title of the webpage, which appears in the browser's title bar.</li>
+        <li>The <b>&lt;body&gt;</b> section contains the content that will be displayed on the webpage.</li>
+        <li>The <b><q>h1 and p</q></b> are two types of tags. We will learn about more tags in the later section</li>
+    </ul>
+    <h2>HTML Tags</h2>
+    <p>If you want to build a beautiful website, tags are essential elements that help you achieve that.An HTML tag acts as a container for content or other HTML tags. Tags are words enclosed within &lt; and &gt; angle brackets.They serve as keywords that instruct the web browser on how to format and display the content.</p>
+    <h3>Document Structure Tags</h3>
+    <ol>
+        <li> <b> &lt;!DOCTYPE html&gt;</b> : Specifies the document type.</li>
+        <li> <b>&lt;html&gt;</b> : Encloses the entire HTML document.</li>
+        <li> <b>&lt;head &gt;</b>: Contains meta-information and links to scripts and stylesheets.</li>
+        <li> <b>&lt;body&gt;</b> : Contains the content of the web page.</li>
+    </ol>
+
+    <hr>
+
+    <h3>Metadata Tags</h3>
+    <ol>
+        <li> <b> &lt;title&gt;</b> :  Sets the title of the web page.</li>
+        <li> <b>&lt;meta&gt;</b> : Provides metadata such as character set, author, and viewport settings.</li>
+        <li> <b>&lt;link &gt;</b>: Links external resources like stylesheets.</li>
+    </ol>
+
+    <hr>
+
+    <h3>Text Formatting Tags</h3>
+
+    <ol>
+        <li> <b> &lt;p&gt;</b> : Paragraph.</li>
+        <li> <b>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</b> : Headings.</li>
+        <li> <b>&lt;strong&gt;</b>: Strong emphasis (typically bold).</li>
+        <li> <b>&lt;em&gt;</b> : Emphasis (typically italic).</li>
+        <li><b> &lt;br&gt;</b>Line break.</li>
+        <li><b> &lt;hr&gt;</b>Horizontal rule.</li>
+    </ol>
+
+    <hr>
+
+    <h3>List Tags</h3>
+    <ol>
+        <li> <b> &lt;ul&gt;</b> : Unordered List</li>
+        <li> <b>&lt;ol&gt;</b> : Ordered List</li>
+        <li> <b>&lt;li&gt;</b>: Listed Items</li>
+    </ol>
+    <hr>
+
+    <h3>Hyperlink and Media Tags</h3>
+    <ol>
+        <li> <b> &lt;a&gt;</b> : Anchor (used for links).</li>
+        <li> <b>&lt;img&gt;</b> : Image</li>
+        <li> <b>&lt;audio&gt;</b>:Audio Content</li>
+        <li> <b>&lt;video&gt;</b> : Video Content</li>
+    </ol>
+
+    <hr>
+
+    <h3>Form Tags</h3>
+    <ol>
+        <li> <b> &lt;form&gt;</b> : Form.</li>
+        <li> <b>&lt;input&gt;</b> : Input field.</li>
+        <li> <b>&lt;textarea&gt;</b>: Text area.</li>
+        <li> <b>&lt;button&gt;</b> : Button</li>
+        <li> <b>&lt;dropdown &gt;</b>: Dropdown List</li>
+        <li> <b>&lt;option&gt;</b> : Options within a &lt;select&gt; or &lt;datalist&gt;</li>
+    </ol>
+
+    <hr>
+
+    <h3>Table Tags</h3>
+    <ol>
+        <li> <b> &lt;table&gt;</b> : Table</li>
+        <li> <b>&lt;tr&gt;</b> : Table Row</li>
+        <li> <b>&lt;td&gt;</b>:Table Data Cell.</li>
+        <li> <b>&lt;th&gt;</b> : Table Header Cell</li>
+        <li> <b>&lt;thead&gt;</b> : Table header group.</li>
+        <li> <b>&lt;tbody&gt;</b>: Table body group.</li>
+        <li> <b>&lt;tfoot&gt;</b> : Table footer group..</li>
+    </ol>
+
+    <hr>
+
+    <h3>Semantic Tags</h3>
+    <ol>
+        <li> <b> &lt;header&gt;</b> : Header section.</li>
+        <li> <b>&lt;footer&gt;</b> : Footer Section</li>
+        <li> <b>&lt;article&gt;</b>: Article</li>
+        <li> <b>&lt;section&gt;</b> : Section</li>
+        <li> <b> &lt;nav&gt;</b> : Navigation</li>
+        <li> <b>&lt;aside&gt;</b> : Sidebar Content</li>
+
+    </ol>
+
+    <hr>
+
+    <h2>Paired and Unpaired HTML Tags</h2>
+    <table border="2">
+        <caption><strong>Paired and Unpaired Tags</strong></caption>
+        <thead>
+            <tr>
+                <th>Paired Tags</th>
+                <th>Unpaired Tags</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>These are tags that come in pairs, consisting of an opening tag and a corresponding closing tag. The content goes between these two tags.</td>
+                <td>These are tags that don't require a closing tag. They are self-contained, encapsulating all the information within a single tag.</td>
+            </tr>
+            <tr>
+                <td><b>Opening Tag</b>: The opening tag starts with &lt; and ends with &gt;.</td>
+                <td>Self-Closing Tag: A self-closing tag starts with &lt; and ends with /&gt; (though the / is optional in HTML5).</td>
+            </tr>
+            <tr>
+                <td><b>Closing Tag</b>: The closing tag also starts with &lt; but includes a forward slash / before the tag name, and ends with &gt;.</td>
+                <td>Later if you happen to use react or a framework like react.js, you will have to close the tag like this &lt;br/&gt; &lt;hr/&gt;. So it is better to cultivate the habit!</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <p><strong>Examples</strong></p>
+                    <ul>
+                        <li>Paragraphs: &lt;p&gt;This is a paragraph.&lt;/p&gt;</li>
+                        <li>Headings: &lt;h1&gt; This is a heading.&lt;/h1&gt; </li>
+                    </ul>
+                </td>
+                <td>
+                    <p><strong>Examples</strong></p>
+                    <ul>
+                        <li>Line Break: &lt;br&gt;Used to have a line break.</li>
+                        <li>Horizontal Rule: &lt;hr&gt; Used to have a line wherever needed.</li>
+                        <li>Image: &lt;img&gt;Used to have image embed in our webpage.</li>
+                    </ul>
+
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Pictorial Representation of Tags</h2>
+    <img src="Images/representation-of-html-tags.png" alt="Pictorial Representation of Tags">
+
+    <h2>HTML Elements</h2>
+    <p>Beginners often get confused between HTML elements, nested elements, and tags. Let's clarify the difference by understanding each one step-by-step.</p>
+
+    <h3>What is an HTML Element?</h3>
+    <p>An HTML element is a complete set that consists of a start tag (or opening tag), content, and an end tag (or closing tag).<b>HTML Element = Start Tag + Content + End Tag</b></p>
+    <p><b>Example:-</b> &lt;h1&gt;This is our first heading&lt;/h1&gt;</p>
+    <p>In this example, &lt;h1&gt; is the start tag, "This is our first heading" is the content, and &lt;/h1&gt; is the end tag. Together, they form an HTML element.</p>
+    <hr>
+    <h2>What is a Nested HTML Element?</h2>
+    <p>A nested HTML element is an HTML structure where one element is placed inside another element.The enclosing element is often referred to as the "parent," while the enclosed element is called the "child."<b>Nested HTML Element = One HTML Element Inside Another HTML Element</b></p>
+    <p><b>Example:-</b>&lt;h1&gt; &lt;b&gt;This is our first heading&lt;/b&gt;&lt;/h1&gt;</p>
+    <p>In this example, the &lt;b&gt; element (child) is nested inside the &lt;h1&gt; element (parent).</p>
+    <hr>
+    <h2>What is an Empty HTML Element?</h2>
+    <p>An empty HTML element is one that does not have a closing tag or content. These elements are also known as "void elements" or "self-closing elements." <b>Empty HTML Element = Tags with No Content</b></p>
+    <p><b>For Example:- </b> &lt; br &gt;</p>
+    <hr>
+    <table border="1">
+        <Caption><b>HTML Tags vs. Elements</b></Caption>
+        <thead>
+            <tr>
+                <th>HTML Tags</th>
+                <th>HTML Elements</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML tags are the markers that define the start and end of an element.</td>
+                <td>An HTML element includes an opening tag, content, and a closing tag, forming a complete set.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>They are wrapped in angle brackets, like &lt;p&gt; and &lt;/p&gt;.</td>
+                <td>For example, &lt;p&gt;This is a paragraph.&lt;/p&gt;.</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <h2>HTML Id & Classes</h2>
+    <p>HTML offers multiple ways to select and style elements. Two of the most commonly used selectors are IDs and Classes. This blog explores what they are, how to use them, and their differences.</p>
+    <h3>What is an ID?</h3>
+    <p>An ID is an attribute, a unique identifier assigned to only one HTML element within a page. It is often used for unique styling and JavaScript manipulations.<br><b>&lt;div id="myUniqueID"&gt;This is a div with an ID.&lt;/div&gt;</b></p>
+    <h3>What are Classes?</h3>
+    <p>Classes are not unique and can be assigned to multiple elements. They are generally used for applying the same styles or behaviors to a group of elements.</p><br>
+    <b>&lt;div class="myClass"&gt; This is a div with a class.&lt;/div&gt;</b> <br>
+    <b>&lt;p class="myClass"&gt;This is a paragraph with the same class.&lt;/p&gt;</b>
+    <hr>
+
+    <h2>The Style Tag</h2>
+    <p>The style tag in HTML is <q>used to include embedded CSS (Cascading Style Sheets) within an HTML document</q>.It is commonly placed within the &lt;head&gt; section of the HTML file, although it can technically be used in the &lt;body&gt; as well. The style tag allows you to define the look and feel of various HTML elements on the page, <b>including their colors, sizes, margins, and other visual styles.</b></p>
+    <p>Here's a simple example:</p>
+    <code>
+        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Welcome to Mayuran Academy&lt;/title&gt;
+          &lt;style&gt;
+                /* CSS rules go here */
+                p {
+                  color: blue;
+                  font-size: 18px;
+                }
+                .highlight {
+                  background-color: yellow;
+                }
+          &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;we are going to learn HTML From Scratch&lt;/p&gt;
+            &lt;p class="highlight"&gt;This paragraph has a yellow background.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </pre>
+    </code>
+    <p>In this example, we have targetted the second paragraph by its class name in CSS. The style tag is used to add CSS right into HTML. We will learn about CSS and selectors later in the CSS tutorial</p>
+
+    <hr>
+
+    <h2>Using IDs and Classes in CSS</h2>
+    <p>In CSS, elements with IDs are selected using a hash (#) symbol before the ID, and elements with classes are selected using a dot (.) before the class name.</p>
+    <code>
+        <pre>
+            /* CSS for ID */
+            #myUniqueID {
+                background-color: yellow;
+              }
+            /* CSS for Class */
+            .myClass {
+                font-size: 18px;
+              }
+            
+        </pre>
+    </code>
+
+    <h2>Differences Between IDs and Classes</h2>
+    <ul>
+        <li><strong>Uniqueness:</strong> IDs are unique, and classes can be reused.</li>
+        <li><strong>JavaScript:</strong> IDs are often used for JavaScript operations.</li>
+        <li><strong>Styling:</strong> Both can be used for styling, but IDs have higher specificity.</li>
+    </ul>
+
+    <h1>HTML Basic Tags</h1>
+
+    <h2>1. Heading Tags</h2>
+    <ul>
+        <li>In HTML, heading tags ranging from &lt;h1&gt;to &lt;h6&gt; are used to define the structure and layout of text on a web page. 
+            <ol>
+                <li>&lt;h1&gt; Tag is generally used for the main title and is the largest and most prominent.</li>
+                <li>&lt;h2&gt; to &lt;h6&gt; tags are used for subheadings, further subheadings and so on.</li>
+            </ol>
+        </li>
+        <li>These tags help create a hierarchical organization of content, making it easier for both users and search engines to understand the page's content.</li>
+        <li>Proper use of heading tags not only improves the readability of a web page but also optimizes it for <a href="https://www.searchenginejournal.com/heading-tags-for-seo/341817/" target="_blank">Search Engine Ranking in Google.</a></li>
+    </ul>
+
+
+
+    <dl>
+        <dt><b>&lt;h1&gt; Tag: First-Level Heading &lt;h3&gt;</b></dt>
+            <dd>
+                The &lt;h1&gt;tag defines the first-level heading and is typically the largest and boldest among all the heading tags. It is often used for the main title of the page.
+                <code>
+                    <pre>
+                        &lt;h1&gt;
+                            &lt;!-- Heading Content --&gt;
+                        &lt;h1&gt;
+                    </pre>
+                </code>
+            </dd>
+    </dl>
+
+    <dl>
+        <dt><b>&lt;h2&gt; Tag: Second-Level Heading;</b></dt>
+            <dd>
+                The &lt;h2&gt;tag is used for second-level headings and is slightly smaller than the &lt;h1&gt; tag. This is commonly used for section titles.
+                <code>
+                    <pre>
+                        &lt;h2&gt;
+                            &lt;!-- Section Titles --&gt;
+                        &lt;h2&gt;
+                    </pre>
+                </code>
+            </dd>
+    </dl>
+
+    <dl>
+        <dt><b>&lt;h3&gt; Tag: Third-Level Heading;</b></dt>
+            <dd>
+                The &lt;h3&gt;tag is used for third-level headings. These are smaller than &lt;h2&gt; tags and are often used for sub-sections within an &lt;h2&gt; section.
+                <code>
+                    <pre>
+                        &lt;h3&gt;
+                            &lt;!--Content --&gt;
+                        &lt;h3&gt;
+                    </pre>
+                </code>
+            </dd>
+    </dl>
+
+    <dl>
+        <dt><b>&lt;h4&gt; Tag: Fourth-Level Heading;</b></dt>
+            <dd>
+                The &lt;h4&gt;tag defines a fourth-level heading, which is smaller than the &lt;h3&gt; tag. It's often used for sub-sections within an &lt;h3&gt; section.
+                <code>
+                    <pre>
+                        &lt;h4&gt;
+                            &lt;!--Content --&gt;
+                        &lt;h4&gt;
+                    </pre>
+                </code>
+            </dd>
+    </dl>
+
+    <dl>
+        <dt><b>&lt;h5&gt; Tag: Fifth-Level Heading;</b></dt>
+            <dd>
+                The &lt;h5&gt;tag is used for fifth-level headings and is smaller than &lt;h4&gt; tags. These are rarely used but can be helpful for deeply nested sections.
+                <code>
+                    <pre>
+                        &lt;h5&gt;
+                            &lt;!--Content--&gt;
+                        &lt;h5&gt;
+                    </pre>
+                </code>
+            </dd>
+    </dl>
+
+    <dl>
+        <dt><b>&lt;h6&gt; Tag: Fifth-Level Heading;</b></dt>
+            <dd>
+                The &lt;h6&gt;tag defines the sixth-level heading and is the smallest among all the heading tags. It's rarely used but can serve specific formatting needs.
+                <code>
+                    <pre>
+                        &lt;h6&gt;
+                            &lt;!--Content--&gt;
+                        &lt;h6&gt;
+                    </pre>
+                </code>
+            </dd>
+    </dl>
+<div class="summary">
+    <h3>Summary</h3>
+    <ul type="disc">
+    <li> &lt;h1&gt; Tag: Used for the main title of the page; largest and most prominent heading.</li>
+    <li> &lt;h2&gt; Tag: Used for major section headings; smaller than &lt;h1&gt; but still quite prominent.</li>
+    <li> &lt;h3&gt; Tag: Used for sub-sections within an &lt;h2&gt; section; smaller than &lt;h2&gt; but larger than &lt;h4&gt;.</li>
+    <li> &lt;h4&gt; Tag: Often used for headings within an &lt;h3&gt; section; useful for further breaking down content.</li>
+    <li> &lt;h5&gt; Tag: Rarely used; suitable for deeply nested sections or less important headings.</li>
+    <li> &lt;h6&gt; Tag: The smallest heading tag; used for very specific or minor headings, rarely seen in general usage.</li>
+    </ul>
+</div>
+
+<img src="Images/Heading Example.png" alt="Image">
+
+<h2>2. Paragraph Tags</h2>
+<p>To create well-structured text in your HTML document, the &lt;p&gt; tag is essential for defining paragraphs.</p>
+
+<dl>
+    <dt>
+        <b>&lt;p&gt;Tag: Defining a Paragraph in HTML:-</b>
+    </dt>
+    <dd>
+        The &lt;p&gt; tag is used to format text into distinct paragraphs. Each paragraph element is separated by automatic empty line spaces above and below the content, providing a clear visual separation. The tag must be closed with its corresponding &lt;/p&gt; tag. 
+    </dd>
+    <code>
+        <pre>
+         &lt;p&gt;
+               &lt;!-- Paragraph Content --&gt;
+         &lt;/p&gt;
+        </pre>
+    </code>
+
+    <dt>
+        <b>Attributes and Styling</b>
+    </dt>
+    <dd>
+        While the &lt;p&gt; tag is straightforward, you can enhance its functionality using various attributes like class or id for CSS styling. You can also include inline styles using the style attribute.
+    </dd> 
+    <code>
+        <pre>
+            &lt;p class="example" style="color: blue;"&gt;
+            This is a styled paragraph.
+            &lt;/p&gt;
+        </pre>
+    </code>
+
+
+    <dt>
+        <b>Best Practices</b>
+    </dt>
+    <dd>
+        It's advisable to use the &lt;p&gt; tag for textual content and not for layout control. For layout purposes, consider using HTML5 semantic tags like &lt;section&gt;, &lt;article&gt;, or CSS techniques.        Dont worry we will look into semantic tags and other techniques later in this tutorial. Here is how you can create a paragraph in html:
+    </dd>
+
+
+<img src="Images/Paragraph Tag.png" alt="">
+
+<hr>
+
+<h2>3. Horizontal Line Tag</h2>
+<p>To add a horizontal line in your HTML document, the &lt;hr&gt; tag comes in handy.</p>
+
+
+    <dt>
+        <b>How to use the &lt;hr&gt; tag? </b>
+    </dt>
+    <dd>
+        The &lt;hr&gt; tag is an empty or self-closing tag, meaning it doesn't require a closing tag. It serves as a visual separator, dividing different sections of your document with a horizontal line. <br><br>
+        The syntax of the hr tag looks something like this.
+    </dd>
+    <code>
+        <pre>
+            &lt;hr&gt;
+        </pre>
+    </code>
+
+<img src="Images/HR_tag.png" alt="Horizontal Tag">
+
+<h2>4. Line Break Tag</h2>
+
+    <dt>
+        <b>How to use Line Break Tag:</b>
+    </dt>
+    <dd>
+        To insert a line break in your HTML document, you can utilize the &lt;br&gt; tag. &lt;br&gt; tag is used to insert line breaks in text or paragraphs.
+        <br><br>When implemented, it automatically moves the text following the tag to the next line.
+        <br><br>        
+        The syntax for the &lt;br&gt; tag looks like this:
+    </dd>
+    <code>
+        <pre>
+            &lt;br&gt;
+        </pre>
+    </code>
+
+
+<h2>5. Anchor Tag</h2>
+<p>Links are fundamental to navigating the web. In HTML, links are created using the &lt;a&gt; tag, also known as the Anchor tag.</p>
+
+    <dt>
+        <b>Key Characteristics of HTML Links:- </b>
+    </dt>
+    <dd>
+        <ul>
+            <li>Specified by the &lt;a&gt; tag</li>
+            <li>Also known as hyperlinks.</li>
+            <li>Used to link one document to another.</li>
+            <li>Includes a closing tag &lt;/a&gt;</li>
+        </ul>
+    </dd>
+
+    <dt>
+        <b>Syntax of HTML Links</b>
+    </dt>
+    <code>
+        <pre>
+            &lt;a href="Your specified path"&gt;content&lt;/a&gt;
+        </pre>
+    </code>
+
+    <dt>
+        <b>
+        Essential Attributes of the Anchor Tag
+        </b>
+    </dt>
+    <dd>
+        HTML links primarily use two attributes:
+        <ul>
+            <li><b>href attribute:</b> Defines the URL the link points to.</li>
+            <li><b>target attribute:</b>Specifies where to open the linked document.</li>
+        </ul>
+    </dd>
+    <dt>
+        <b>Target Attribute Values</b>
+    </dt>
+    <dd>
+        <ul>
+            <li><b>_blank:</b> Opens the linked document in a new window or tab.</li>
+            <li><b>_top:</b> Opens document in the full body of the window.</li>
+            <li><b>_self:</b> Opens document in the same window or tab (default behavior).</li>
+            <li><b>_parent:</b> Opens the linked document in the parent frame.</li>
+        </ul>
+    </dd>
+
+    <dt>
+        <b>Linking to Specific Page Sections</b>
+    </dt>
+    <dd>
+        To link to a specific section of a webpage, you can:
+        <ul>
+            <li>Use the name or id attribute of the target section.</li>
+            <li>Use a hyperlink with a hash (#) followed by the target id or name.</li>
+        </ul>
+    </dd>
+    <dt>
+        <b>Example</b>
+    </dt>
+    <dd>
+        Let's say you have a long webpage with multiple sections, and you want to create a link at the top that, when clicked, takes the user directly to a specific section further down the page. You can do this using HTML links that target specific sections.
+    </dd>
+    <code>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;My Webpage&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!-- Link at the top --&gt;
+                &lt;a href="#gardening-tips"&gt;Go to Gardening Tips&lt;/a&gt;
+
+                &lt;!-- Some Content --&gt;
+                &lt;p&gt;Here is some other content...&lt;/p&gt;
+
+                &lt;!--Gardening Tips Section--&gt;
+                &lt;h2 id="gardening-tips"&gt;Gardening Tips&lt;/p&gt;               
+                &lt;p&gt;This section provides tips on how to garden...&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </code>
+
+    <h2>6. Image Tag</h2>
+    <p>Images play a crucial role in enhancing web pages by providing a visual context that complements textual content. In HTML, the &lt;img&gt; tag is used to embed images into web pages.</p>
+
+    <dt>
+        <b>Basic Syntax for Embedding Images</b>
+    </dt>
+
+    <dd>
+        This is how the syntax to embed an image in html looks like:
+    </dd>
+
+    <code>
+        <pre>
+            &lt;img src="image's path"/&gt;
+        </pre>
+    </code>
+
+    <dt>
+        <b>Key Features of the &lt;img&gt; Tag:- </b>
+    </dt>
+
+    <dd>
+        <ul>
+            <li>It's a self-closing tag, meaning it doesn't require a corresponding closing tag.</li>
+            <li>Commonly used attributes include the "alt" attribute for image descriptions and the "src" attribute for specifying the image location.</li>
+            <li>Supports various image formats including PNG, JPEG, JPG, and GIF.</li>
+        </ul>
+    </dd>
+
+    <dt>
+        <b>Setting Mandatory Attributes:- </b>
+    </dt>
+
+    <dd>
+        The "src" and "alt" attributes are essential for the proper functioning of the &lt;img&gt; tag.
+        <ul>
+            <li><b>src attribute:</b> Specifies the path to the image file.</li>
+            <li><b>alt attribute:</b> Provides a text description for the image.</li>
+        </ul>
+    </dd>
+    <code>
+        <pre>
+            &lt;img src="images/profile_picture.jpg" alt="Profile Picture" /&gt;
+        </pre>
+    </code>
+<p><b>Note:</b> To find the image's location, right-click on the image, go to properties, and check the location field.</p>
+
+    <dt>
+        <b>Setting Image Dimensions</b>
+    </dt>
+
+    <dd>
+        Although dimensions can be set using the "width" and "height" attributes in the &lt;img&gt; tag, modern best practices recommend using CSS for this purpose.
+    </dd>
+    <code>
+        <pre>
+            &lt;img src="image.png" alt="Description" width="300" height="100" /&gt;
+        </pre>
+    </code>
+
+    <p><b>Note:</b>Styling dimensions and other properties are now more commonly managed through CSS for better flexibility and maintainability.</p>
+
+    <h2>Pre Tag</h2>
+    <p>The &lt;pre&gt; tag serves as an indispensable tool in HTML for displaying preformatted text, such as code snippets in various programming languages.</p>
+
+    <dt>
+        What Does the &lt;pre&gt; Tag Do?
+    </dt>
+
+    <dd>
+        The &lt;pre&gt; tag preserves the original formatting of text, making it an excellent choice for displaying code where spacing and indentation are key.
+    </dd>
+    <br>
+    <br>
+
+    <b>Syntax for Using the &lt;pre&gt; Tag</b>
+    <code>
+        <pre>
+            &lt;pre&gt;
+                &lt;!-- code snippet in any programming language --&gt;
+            &lt;/pre&gt;
+        </pre>
+    </code>
+
+    <dt>
+        <b>Key Features</b>
+    </dt>
+    <dd>
+        <ul>
+            <li>The &lt;pre&gt; tag maintains both spaces and line breaks, ensuring that text appears exactly as it was originally formatted.</li>
+            <li>The &lt;pre&gt; tag has both an opening tag <pre> and a closing tag &lt;/pre&gt;.</li>
+            <li>Additional attributes can also be added for further customization.</li>
+        </ul>
+    </dd>
+
+    <dt>
+        <b>When to Use the &lt;pre&gt; Tag?</b>
+    </dt>
+
+    <dd>
+        The &lt;pre&gt; tag is most effective when you want the text to display on your HTML page exactly as it was typed, without any formatting changes. It is especially useful for displaying code snippets or preformatted text from data files.
+    </dd>
+
+    <br>
+
+    <b>
+        Example for Pre Tag:- 
+    </b>
+    <br>
+
+    <img src="Images/Pre Tag.png" alt="">
+</dl>
+
+<h1>HTML Inline Elements</h1>
+<p>Inline Elements don't start on a new line. It only takes the width required to cover the content.HTML elements are generally divided into two categories: <b>Block-level and Inline elements.</b></p> 
+
+<img src="Images/inline-block-image.jpg" alt="Images">
+
+<h2>What are Inline Elements?</h2>
+<p>Inline elements do not start on a new line and only take up as much width as necessary.They are part of the flow within other elements.</p>
+
+<p>Inline elements can contain other inline elements, but they generally should not contain block-level elements. <br> <br> 
+For example, you could nest a &lt;strong&gt; (strong emphasis) element within a &lt;span&gt; (a generic inline container) element, like so:</p>
+<code>
+    <pre>
+        &lt;span&gt; This is &lt;strong&gt; important &lt;/strong&gt; text. &lt;/span&gt;
+    </pre>
+</code>
+
+<p>However, placing a <b>block-level element like a &lt;div&gt; or &lt;p&gt; inside an inline element like &lt;span&gt; or &lt;a&gt; is typically considered incorrect HTML</b> and could lead to unexpected behavior in terms of layout and styling.</p>
+
+<code>
+    <pre>
+        &lt;!-- This is generally considered incorrect --&gt;
+        &lt;span&gt;This is &lt;div&gt; not recommended&lt;/div&gt; text.&lt;/span&gt;
+    </pre>
+</code>
+
+<h3>Common Inline Elements</h3>
+<ul>
+    <li><b>&lt;span&gt;:</b> A generic inline container for text</li>
+    <li><b>&lt;a&gt;:</b> Defines a hyperlink</li>
+    <li><b>&lt;strong&gt;:</b>Defines important text</li>
+    <li><b>&lt;em&gt;:</b>Defines emphasized text</li>
+    <li><b>&lt;img&gt;:</b>Embeds an image</li>
+    <li><b>&lt;input&gt;:</b>Defines an input control</li>
+</ul>
+
+
+
+
+
+
+
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
